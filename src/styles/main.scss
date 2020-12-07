@@ -1,0 +1,341 @@
+// Putin PURPLE
+.purple {
+	--palette-color-1: #54467B;
+	--palette-color-2: #A79CC7;
+	--palette-color-3: #AD94EF;
+	--palette-color-4: #FFFFFF;
+	--palette-color-5: #3F3754;
+
+	--palette-color-6: #352e47;
+	--palette-color-7: #9F9BAA;
+
+	--hyperlink-color: #0000FF;
+
+	// Palette Set 1
+	--color-mh-primary: 		var(--palette-color-1);
+	--color-mh-secondary:		var(--palette-color-2);
+	--color-mh-accent: 			var(--palette-color-3);
+	--color-mh-foreground: 		var(--palette-color-4);
+	--color-mh-background:		var(--palette-color-5);
+	--color-mh-background-dark: var(--palette-color-6);
+	--color-mh-hover:			var(--palette-color-7);
+	--color-mh-divider:			#0000001f;
+
+	// Palette Set 2
+	--color-bd-primary: 		var(--palette-color-2);
+	--color-bd-secondary:		var(--palette-color-1);
+	--color-bd-accent: 			var(--palette-color-3);
+	--color-bd-foreground: 		var(--palette-color-5);
+	--color-bd-background:		var(--palette-color-4);
+	--color-bd-background-dark: #f5f5f5;
+	--color-bd-hover:			#7F7A8D;
+	--color-bd-divider:			#0000001f;
+}
+
+// GREEN with envy
+.lime {
+	--palette-color-1: #698C00;
+	--palette-color-2: #D5CCBA;
+	--palette-color-3: #9DD100;
+	--palette-color-4: #FFFFFF;
+	--palette-color-5: #354600;
+
+	--palette-color-6: #263300;
+	--palette-color-7: #A5A4A0;
+
+	--hyperlink-color: #0000FF;
+
+	// Palette Set 1
+	--color-mh-primary: 		var(--palette-color-1);
+	--color-mh-secondary:		var(--palette-color-2);
+	--color-mh-accent: 			var(--palette-color-3);
+	--color-mh-foreground: 		var(--palette-color-4);
+	--color-mh-background:		var(--palette-color-5);
+	--color-mh-background-dark: var(--palette-color-6);
+	--color-mh-hover:			var(--palette-color-7);
+	--color-mh-divider:			#0000001f;
+
+	// Palette Set 2
+	--color-bd-primary: 		var(--palette-color-2);		// Color 5 is not used
+	--color-bd-secondary: 		var(--palette-color-1);
+	--color-bd-accent: 			var(--palette-color-3);
+	--color-bd-foreground: 		#465D00;
+	--color-bd-background:		var(--palette-color-4);
+	--color-bd-background-dark: #f5f5f5;
+	--color-bd-hover:			#788455;
+	--color-bd-divider:			#0000001f;
+}
+
+// Fifty shades of GRAY
+.grey {
+	--palette-color-1: #CCCCCC;
+	--palette-color-2: #646363;
+	--palette-color-3: #79ADB6;
+	--palette-color-4: #404040;
+	--palette-color-5: #f5f5f5;
+
+	--palette-color-6: #ebebeb;
+	--palette-color-7: #A0A0A0;
+
+	--hyperlink-color: #0000FF;
+
+	// Palette Set 1
+	--color-mh-primary: 		var(--palette-color-1);
+	--color-mh-secondary:		var(--palette-color-2);
+	--color-mh-accent: 			var(--palette-color-3);
+	--color-mh-foreground: 		var(--palette-color-4);
+	--color-mh-background:		var(--palette-color-5);
+	--color-mh-background-dark: var(--palette-color-6);
+	--color-mh-hover:			var(--palette-color-7);
+	--color-mh-divider:			#0000001f;
+
+	// Palette Set 2
+	--color-bd-primary: 		var(--palette-color-1);		// Color-2 is not used in this set
+	--color-bd-secondary:		var(--palette-color-4);
+	--color-bd-accent: 			var(--palette-color-3);
+	--color-bd-foreground: 		var(--palette-color-4);
+	--color-bd-background:		var(--palette-color-5);
+	--color-bd-background-dark: var(--palette-color-6);
+	--color-bd-hover:			var(--palette-color-7);
+	--color-bd-divider:			#0000001f;	
+}
+
+// INDIGO nation
+.indigo {
+	--palette-color-1: #5A5868;
+	--palette-color-2: #BEB7E8;
+	--palette-color-3: #8576E6;
+	--palette-color-4: #E5E5E5;
+	--palette-color-5: #474554;
+
+	--palette-color-6: #3d3c49;
+	--palette-color-7: #96959D;
+
+	--hyperlink-color: #0000FF;
+
+	// Palette Set 1
+	--color-mh-primary: 		var(--palette-color-1);
+	--color-mh-secondary:		var(--palette-color-2);
+	--color-mh-accent: 			var(--palette-color-3);
+	--color-mh-foreground: 		var(--palette-color-4);
+	--color-mh-background:		var(--palette-color-5);
+	--color-mh-background-dark: var(--palette-color-6);
+	--color-mh-hover:			var(--palette-color-7);
+	--color-mh-divider:			#0000001f;
+
+	// Palette Set 2
+	--color-bd-primary: 		var(--palette-color-2);
+	--color-bd-secondary:		var(--palette-color-1);
+	--color-bd-accent: 			var(--palette-color-3);
+	--color-bd-foreground: 		var(--palette-color-5);
+	--color-bd-background:		#FFFFFF;
+	--color-bd-background-dark: #f5f5f5;
+	--color-bd-hover:			#84838D;
+	--color-bd-divider:			#0000001f;
+}
+
+// You BLUE me away
+.blue {
+	--palette-color-1: #4E5C68;
+	--palette-color-2: #9EBFDC;
+	--palette-color-3: #6FB6EF;
+	--palette-color-4: #FFFFFF;
+	--palette-color-5: #3F4B56;
+
+	--palette-color-6: #364049;
+	--palette-color-7: #9FA5AB;
+
+	--hyperlink-color: #0000FF;
+
+	// Palette Set 1
+	--color-mh-primary: 		var(--palette-color-1);
+	--color-mh-secondary:		var(--palette-color-2);
+	--color-mh-accent: 			var(--palette-color-3);
+	--color-mh-foreground: 		var(--palette-color-4);
+	--color-mh-background:		var(--palette-color-5);
+	--color-mh-background-dark: var(--palette-color-6);
+	--color-mh-hover:			var(--palette-color-7);
+	--color-mh-divider:			#0000001f;
+
+	// Palette Set 2
+	--color-bd-primary: 		var(--palette-color-2);
+	--color-bd-secondary:		var(--palette-color-1);
+	--color-bd-accent: 			var(--palette-color-3);
+	--color-bd-foreground: 		var(--palette-color-5);
+	--color-bd-background:		var(--palette-color-4);
+	--color-bd-background-dark: #f5f5f5;
+	--color-bd-hover:			#7F878E;
+	--color-bd-divider:			#0000001f;
+}
+
+// Old is not GOLD
+.gold {
+	--palette-color-1: #585753;
+	--palette-color-2: #D4D0C7;
+	--palette-color-3: #BC9C63;
+	--palette-color-4: #FFFFFF;
+	--palette-color-5: #48494B;
+
+	--palette-color-6: #3e3f41;
+	--palette-color-7: #A4A4A5;
+
+	--hyperlink-color: #0000FF;
+
+	// Palette Set 1
+	--color-mh-primary: 		var(--palette-color-1);
+	--color-mh-secondary:		var(--palette-color-2);
+	--color-mh-accent: 			var(--palette-color-3);
+	--color-mh-foreground: 		var(--palette-color-4);
+	--color-mh-background:		var(--palette-color-5);
+	--color-mh-background-dark: var(--palette-color-6);
+	--color-mh-hover:			var(--palette-color-7);
+	--color-mh-divider:			#0000001f;
+
+	// Palette Set 2
+	--color-bd-primary: 		var(--palette-color-2);
+	--color-bd-secondary:		var(--palette-color-1);
+	--color-bd-accent: 			var(--palette-color-3);
+	--color-bd-foreground: 		var(--palette-color-5);
+	--color-bd-background:		var(--palette-color-4);
+	--color-bd-background-dark: #f5f5f5;
+	--color-bd-hover:			#858687;
+	--color-bd-divider:			#0000001f;
+}
+
+// Sayonara CYANara
+.darkCyan{
+	--palette-color-1: #33525E;
+	--palette-color-2: #5EA6C1;
+	--palette-color-3: #79ADB6;
+	--palette-color-4: #FFFFFF;
+	--palette-color-5: #2C4650;
+
+	--palette-color-6: #1d2e35;
+	--palette-color-7: #96A3A8;
+
+	--hyperlink-color: #0000FF;
+
+	// Palette Set 1
+	--color-mh-primary: 		var(--palette-color-1);
+	--color-mh-secondary:		var(--palette-color-2);
+	--color-mh-accent: 			var(--palette-color-3);
+	--color-mh-foreground: 		var(--palette-color-4);
+	--color-mh-background:		var(--palette-color-5);
+	--color-mh-background-dark: var(--palette-color-6);
+	--color-mh-hover:			var(--palette-color-7);
+	--color-mh-divider:			#0000001f;
+
+	// Palette Set 2
+	--color-bd-primary: 		var(--palette-color-2);
+	--color-bd-secondary:		var(--palette-color-1);
+	--color-bd-accent: 			var(--palette-color-3);
+	--color-bd-foreground: 		var(--palette-color-5);
+	--color-bd-background:		var(--palette-color-4);
+	--color-bd-background-dark: #f5f5f5;
+	--color-bd-hover:			#72848A;
+	--color-bd-divider:			#0000001f;
+}
+
+// DARK Knight
+.dark {
+	--palette-color-1: #666666;
+	--palette-color-2: #ababab;
+	--palette-color-3: #778899;
+	--palette-color-4: #f5f5f5;
+	--palette-color-5: #333333;
+
+	--palette-color-6: #464646;		// In this theme, This shade should be lighter than background
+	--palette-color-7: #8D8D8D;
+
+	--hyperlink-color: var(--palette-color-3);
+
+	// Palette Set 1
+	--color-mh-primary: 		var(--palette-color-1);
+	--color-mh-secondary:		var(--palette-color-2);
+	--color-mh-accent: 			var(--palette-color-3);
+	--color-mh-foreground: 		var(--palette-color-4);
+	--color-mh-background:		var(--palette-color-5);
+	--color-mh-background-dark: var(--palette-color-6);
+	--color-mh-hover:			var(--palette-color-7);
+	--color-mh-divider:			#0000001f;
+
+	// Palette Set 2
+	--color-bd-primary: 		var(--palette-color-1);
+	--color-bd-secondary:		var(--palette-color-2);
+	--color-bd-accent: 			var(--palette-color-3);
+	--color-bd-foreground: 		var(--palette-color-4);
+	--color-bd-background:		var(--palette-color-5);
+	--color-bd-background-dark: var(--palette-color-6);
+	--color-bd-hover:			#F8F8F8;
+	--color-bd-divider:			#000000;
+  }
+
+
+// BROWNie points
+.brown{
+	--palette-color-1: #574051;
+	--palette-color-2: #DEC5D7;
+	--palette-color-3: #BB75C8;
+	--palette-color-4: #FFFFFF;
+	--palette-color-5: #41343D;
+
+	--palette-color-6: #362b33;
+	--palette-color-7: #A09A9E;
+
+	--hyperlink-color: #0000FF;
+
+	// Palette Set 1
+	--color-mh-primary: 		var(--palette-color-1);
+	--color-mh-secondary:		var(--palette-color-2);
+	--color-mh-accent: 			var(--palette-color-3);
+	--color-mh-foreground: 		var(--palette-color-4);
+	--color-mh-background:		var(--palette-color-5);
+	--color-mh-background-dark: var(--palette-color-6);
+	--color-mh-hover:			var(--palette-color-7);
+	--color-mh-divider:			#0000001f;
+
+	// Palette Set 2
+	--color-bd-primary: 		var(--palette-color-2);
+	--color-bd-secondary:		var(--palette-color-1);
+	--color-bd-accent: 			var(--palette-color-3);
+	--color-bd-foreground: 		var(--palette-color-5);
+	--color-bd-background:		var(--palette-color-4);
+	--color-bd-background-dark: #f5f5f5;
+	--color-bd-hover:			#80787E;
+	--color-bd-divider:			#0000001f;
+}
+
+// Leprechuan GREEN
+.seagreen {
+	--palette-color-1: #4D6456;
+	--palette-color-2: #ACC2B4;
+	--palette-color-3: #84BE99;
+	--palette-color-4: #FFFFFF;
+	--palette-color-5: #3F4A43;
+
+	--palette-color-6: #363f39;
+	--palette-color-7: #9FA5A1;
+
+	--hyperlink-color: #0000FF;
+
+	// Palette Set 1
+	--color-mh-primary: 		var(--palette-color-1);
+	--color-mh-secondary:		var(--palette-color-2);
+	--color-mh-accent: 			var(--palette-color-3);
+	--color-mh-foreground: 		var(--palette-color-4);
+	--color-mh-background:		var(--palette-color-5);
+	--color-mh-background-dark: var(--palette-color-6);
+	--color-mh-hover:			var(--palette-color-7);
+	--color-mh-divider:			#0000001f;
+
+	// Palette Set 2
+	--color-bd-primary: 		var(--palette-color-2);
+	--color-bd-secondary:		var(--palette-color-1);
+	--color-bd-accent: 			var(--palette-color-3);
+	--color-bd-foreground: 		var(--palette-color-5);
+	--color-bd-background:		var(--palette-color-4);
+	--color-bd-background-dark: #f5f5f5;
+	--color-bd-hover:			#7F8682;
+	--color-bd-divider:			#0000001f;
+}
+

@@ -1,0 +1,27 @@
+@import "../base/fonts";
+
+@function setColorByZone($zone, $scheme, $tone: base) {
+	$mapname: map-get($im-zone-map, $zone);
+
+	@if (($scheme == "foreground") or ($scheme == "background")) {
+		@return getForeground_BackgroundTone($mapname, $scheme, $tone);
+	}
+
+	@return getTone($mapname, $scheme, $tone);
+}
+
+@function getTone($mapname, $scheme, $tone: base) {
+	@return map-get($mapname, $scheme);
+}
+
+@function getForeground_BackgroundTone($mapname, $scheme, $tone) {
+	@if ($tone == "dark") {
+		@return map-get($mapname, background-dark);
+	}
+	@return getTone($mapname, $scheme, $tone);
+}
+
+
+@function setFontFamily($fontname) {
+	@return map-get($im-font-family, $fontname);
+}

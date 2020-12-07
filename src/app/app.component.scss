@@ -1,0 +1,89 @@
+@import "../styles/abstract/functions";
+@import "../styles/abstract/placeholder";
+@import "../styles/abstract/mixins";
+@import "../styles/main.scss";
+
+:host{
+  height: 100%;
+  width: 100%;
+  border: 1px solid;
+  display: block;
+  background-color: rgba(var(--b3f,250,250,250),1)
+}
+.appRootLayout{
+  @extend %dockFull;
+  @include displayGrid();
+  @include setZoneCommonProperties(nameplate);
+  grid-template-columns: 20% 1fr;
+  grid-template-rows: 20% 1fr;
+  grid-template-areas: "header header"
+  "left right";
+}
+
+.header{
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 80% 1fr;
+  grid-area: header;
+  border-bottom: 1px solid;
+}
+
+.left{
+  grid-area: left;
+  border-right: 1px solid;
+  display: grid;
+  grid-auto-flow: row;
+  /* grid-auto-columns: min-content; */
+  grid-auto-rows: min-content;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  padding: 10px;
+  & button{
+    cursor: pointer;
+  }
+}
+
+.right{
+  grid-area: right;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(var(--b3f,250,250,250),1)
+}
+
+.themeslection{
+  display: grid;
+  grid-auto-flow: column;
+  & button{
+    margin-right: 10px;
+  }
+
+  grid-auto-flow: column;
+  align-self: start;
+  justify-self: end;
+  padding: 10px;
+}
+
+.mainheader{
+  display: grid;
+  justify-content: end;
+  align-items: end;
+  /* justify-items: end; */
+  /* align-content: center; */
+  grid-gap: 10px;
+  grid-auto-flow: column;
+  padding: 10px;
+}
+
+.parent{
+  &::after{
+      content: attr(test);
+  }
+  &::before {
+    content: "\e913";
+  }
+}
+.fonttest{
+  font-family: myFirstFont;
+}
+

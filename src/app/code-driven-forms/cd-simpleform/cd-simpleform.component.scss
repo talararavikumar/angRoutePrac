@@ -1,0 +1,23 @@
+form{
+    width: 300px;
+    & div, & label{
+        padding: 5px 0;
+    }
+
+    & div{
+        display: flex;
+        flex-direction: column;
+        padding:5px 0;
+        & input{
+            padding: 5px;
+        }
+        
+    }
+
+    & button{
+        margin: 15px 0;
+    }
+}
+
+input.ng-invalid.ng-touched {
+    border: 1px red solid; }

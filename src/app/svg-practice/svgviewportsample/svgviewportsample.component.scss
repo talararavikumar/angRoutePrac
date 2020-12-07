@@ -1,0 +1,19 @@
+::ng-deep   path {
+            fill: yellow;
+             stroke: black;
+             stroke-width: 8px;
+             stroke-linecap: round;
+             stroke-linejoin: round;
+             pointer-events: none;
+           }
+
+:host {
+
+     svg{
+    width: 32px;
+    height: 32px;
+    padding:4px
+    }
+
+
+}

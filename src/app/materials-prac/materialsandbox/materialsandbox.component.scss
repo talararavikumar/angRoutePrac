@@ -1,0 +1,11 @@
+:host{
+ display: flex;
+ flex-direction: column;   
+}
+
+.matAutoContainer{
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    grid-gap: 10px;
+}

@@ -1,0 +1,102 @@
+:host{
+    background-color:  rgba(var(--d87,255,255,255),1);
+    min-width: 350px;
+    margin: 12px auto;
+}
+
+.logInRootContainer{
+    color: rgba(var(--i1d,38,38,38),1);
+    justify-content: center;
+    margin-top: 12px;    
+}
+
+.usernameContainer{
+    margin: 8px 40px;
+}
+
+.inputarea{
+    color: rgba(var(--i1d,38,38,38),1);
+    //font-family: "Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    width: 100%;
+    line-height: 18px;
+
+    background: rgba(var(--b3f,250,250,250),1);
+    border: 0;
+    flex: 1 0 auto;
+    margin: 0;
+    outline: 0;
+    overflow: hidden;
+    padding: 9px 0 7px 8px;
+    text-overflow: ellipsis;
+}
+
+.username{
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-appearance: none;
+    background: rgba(var(--b3f,250,250,250),1);
+    border: 1px solid rgba(var(--ca6,219,219,219),1);
+    border-radius: 3px;
+    box-sizing: border-box;
+    color: rgba(var(--i1d,38,38,38),1);
+    display: flex;
+    flex-direction: row;
+    font-size: 14px;
+    position: relative;
+    width: 100%;
+}
+
+.usernameLabel{
+    color: rgba(var(--f52,142,142,142),1);
+    font-size: 14px;
+    height: 36px;
+    left: 8px;
+    line-height: 36px;
+    overflow: hidden;
+    pointer-events: none;
+    position: absolute;
+    right: 0;
+    text-overflow: ellipsis;
+    transform-origin: left;
+    transition: transform ease-out .1s;
+    user-select: none;
+    white-space: nowrap;
+    z-index: 2;
+}
+
+.log-in{
+    margin: 8px 40px;
+    & .log-in-btn{
+        background-color: rgba(var(--d69,0,149,246),.3);
+        border: 1px solid transparent;
+        border-radius: 3px;
+                opacity: 1;
+        width: 100%;
+        appearance: none;
+        cursor: pointer;
+        display: block;
+        font-weight: 600;
+        padding: 5px 9px;
+        text-align: center;
+        text-overflow: ellipsis;
+        user-select: none;
+        & .log-in-btn-text {
+            color: rgba(var(--eca,255,255,255),1)
+        }
+    }
+}
+
+.orLabel{
+    margin: 10px 40px 18px;
+}
+
+.line{
+    height: 1px;
+}
+
+.orText{
+    margin: 0 18px;
+}

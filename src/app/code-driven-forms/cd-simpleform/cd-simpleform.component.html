@@ -1,0 +1,84 @@
+<!-- <form [formGroup]="userForm">
+    <div>
+        <label>
+            username
+        </label>
+        <input formControlName="username" autocomplete="off">
+        <div *ngIf="userForm.get('username').dirty && userForm.get('username').hasError('required')">
+            Username is required
+        </div>
+        <div *ngIf="userForm.get('username').dirty && userForm.get('username').hasError('minlength')">
+            Username length should be minimum 3 charachters
+        </div>
+        <small>{{ userForm.get('username').value }} is an awesome username!</small>
+    </div>
+    
+    <div>
+        <label>
+            password
+        </label>
+        <input formControlName="password" name="password" autocomplete="off" type="password">
+    </div>
+    <button type="submit" [disabled]="userForm.invalid">Register</button>
+    <p>{{userForm.value | json}}</p>
+</form> -->
+
+<form [formGroup]="userForm">
+    <div>
+        <label>
+            username
+        </label>
+        <input formControlName="username" autocomplete="off" name="username">
+        <button [disabled]="userForm.invalid || userForm.pending">
+            Send
+            <span *ngIf="userForm.get('username').pending"> (searching)</span>
+          </button>
+
+        <p style="color: red" *ngIf="userNameCtr.hasError('userNameExists')">Not available</p>
+
+        <!-- <hr>
+        <div *ngIf="userNameCtr.touched && userNameCtr.hasError('required')">
+            Username is required
+        </div>
+        <div *ngIf="userNameCtr.touched && userNameCtr.hasError('minlength')">
+            Username length should be minimum 3 charachters
+        </div> -->
+    </div>
+
+    <div formGroupName="passwordForm">
+        <div>
+            <label>
+                password
+            </label>
+            <input formControlName="password" name="password" autocomplete="off" type="password" required>
+            <div *ngIf="passWordCtrl.touched && passWordCtrl.hasError('required')">
+                Password is required
+            </div>
+        </div>
+        <div>
+            <label>
+                confirm password
+            </label>
+            <input formControlName="confirmpassword" name="confirmpassword" autocomplete="off" type="password" required>
+            <div *ngIf="confirmpassWordCtrl.touched && confirmpassWordCtrl.hasError('required')">
+                Password is required
+            </div>
+        </div>
+        <div *ngIf="passwordForm.touched && passwordForm.hasError('matchingError')">
+            password doesn't match
+        </div>
+
+    </div>
+    <div>
+        <label>
+            birthday Date
+        </label>
+        <input formControlName="birthdate" name="birthdate" autocomplete="off" type="date" required>
+        <div *ngIf="birthdateCtrl.dirty">
+            <div *ngIf="birthdateCtrl.hasError('required')">Birth date is required</div>
+            <div *ngIf="birthdateCtrl.hasError('tooYoung')">You're way too young to be betting on pony races</div>
+        </div>
+    </div>
+    <button type="submit" [disabled]="userForm.invalid">Register</button>
+    <p>{{userForm.value | json}}</p>
+</form>

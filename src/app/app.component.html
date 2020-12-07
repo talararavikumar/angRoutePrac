@@ -1,0 +1,38 @@
+<app-im-sc-svgsprite></app-im-sc-svgsprite>
+<div class="appRootLayout">
+    <div class="header">
+        <div class="mainheader">
+            <button [routerLink]="['lazyservice']">login</button>
+            <button [routerLink]="['./auth/logout']">logout</button>
+            <button [routerLink]="['./auth/signup']">sigup</button>
+            <button [routerLink]="['./lazyLoadPrac']">autocomplete</button>
+        </div>
+        <div class="themeslection" (click)="handleThemeUpdate($event)">
+            <button value="dark">dark</button>
+            <button value="calm">calm</button>
+            <button value="light">light</button>
+        </div>
+    </div>
+    <div class="left">
+        <button [routerLink]="['lazyservice']">lazyservice</button>
+    </div>
+    <div class="right">
+        <eager></eager>
+        <router-outlet></router-outlet>
+        <!-- <disandbox></disandbox> -->
+        <!-- <cd-sandbox></cd-sandbox> -->
+        <!-- <directivep-prac></directivep-prac> -->
+        <!-- <cd-simpleform></cd-simpleform> -->
+        <!-- <td-simpleform></td-simpleform> -->
+        <!-- <button (click)="checkcd()">checkcd</button>
+        <ns-race [sInpProp] = "sInpProp"></ns-race> -->
+        <!-- <div class="fonttest">testfont</div> -->
+        <!-- <app-svgviewportsample></app-svgviewportsample> -->
+        <!-- <div [ngClass]="{'class1' : bClass1, 'class2' : bClass2}">
+    Hello World!
+</div> -->
+        <!-- <span class="icon-question-mark">Privacy</span>
+        <app-customattrsample [attr.test]="fdfgfd" class="parent" [inTest] = "bHasOnlySupport?'Invite contacts':'Chat with others'"></app-customattrsample> -->
+        <!-- <app-promise-sample></app-promise-sample> -->
+    </div>
+</div>

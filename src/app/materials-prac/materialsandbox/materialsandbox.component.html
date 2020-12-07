@@ -1,0 +1,8 @@
+<mat-tab-group (selectedTabChange)="efnSelectedSubtabChanged($event)">
+    <mat-tab *ngFor="let tab of tabs; let index = index" [label]="tab">
+    </mat-tab>
+</mat-tab-group>
+<div class="matAutoContainer" *ngIf="bShowAuto">
+    <app-matautosample></app-matautosample>
+    <button mat-raised-button (click)='test()' color='primary'>test</button>
+</div>

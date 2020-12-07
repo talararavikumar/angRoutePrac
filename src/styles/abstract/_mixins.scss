@@ -1,0 +1,30 @@
+@import "./variables";
+
+@mixin displayGrid() {
+    display: grid;
+}
+
+@mixin setZoneCommonProperties($zone) {
+    @include setFontFamilyByZone($zone);
+    @include setBackgroundColor($zone);
+    @include setPassiveTextColor($zone);
+}
+
+/* Map for zone wise fonts */
+
+
+/* Sets Font Family by zone */
+/* Before using this, make sure if setZoneCommonProperties fits your requirement */
+@mixin setFontFamilyByZone($zone) {
+font-family: map-get($im-font-map, $zone);
+}
+
+/* Set parent background color */
+@mixin setBackgroundColor($zone) {
+background-color: setColorByZone($zone,background,base);
+}
+
+/* set color to non interactive text */
+@mixin setPassiveTextColor($zone) {
+    color: setColorByZone($zone,secondary,base);
+}

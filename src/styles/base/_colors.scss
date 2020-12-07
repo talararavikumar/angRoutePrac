@@ -1,0 +1,86 @@
+@function getPrimaryColor($paletteset) {
+    @if ($paletteset == set1) {
+      @return var(--color-mh-primary);
+      } @else if ($paletteset == set2) {
+      @return var(--color-bd-primary);
+    } @else if ($paletteset == set3) {
+      @return #CCCCCC;
+    }
+  }
+  
+  @function getAccentColor($paletteset){
+    @if ($paletteset == set1) {
+      @return var(--color-mh-accent);
+      } @else if ($paletteset == set2) {
+      @return var(--color-bd-accent);
+    } @else if ($paletteset == set3) {
+      @return var(--color-mh-accent);           // Accent color is same across all the sets
+    }
+  }
+  
+  @function getSecondaryColor($paletteset){
+    @if ($paletteset == set1) {
+      @return var(--color-mh-secondary);
+      } @else if ($paletteset == set2) {
+      @return var(--color-bd-secondary);
+    } @else if ($paletteset == set3) {
+      @return #737373;
+    }
+  }
+  
+  @function getForegroundColor($paletteset){
+    @if ($paletteset == set1) {
+      @return var(--color-mh-foreground);
+      } @else if ($paletteset == set2) {
+      @return var(--color-bd-foreground);
+    } @else if ($paletteset == set3) {
+      @return #272727;
+    }
+  }
+  
+  @function getBackgroundColor($paletteset){
+    @if ($paletteset == set1) {
+      @return var(--color-mh-background);
+      } @else if ($paletteset == set2) {
+      @return var(--color-bd-background);
+    } @else if ($paletteset == set3) {
+      @return #ffffff;
+    }
+  }
+  
+  @function getBackgroundColor_dark($paletteset){
+    @if ($paletteset == set1) {
+      @return var(--color-mh-background-dark);
+      } @else if ($paletteset == set2) {
+      @return var(--color-bd-background-dark);
+    } @else if ($paletteset == set3) {
+      @return #e4e4e4;
+    }
+  }
+  
+  @function getHoverColor($paletteset){
+    @if ($paletteset == set1) {
+      @return var(--color-mh-hover);
+      } @else if ($paletteset == set2) {
+      @return var(--color-bd-hover);
+    } @else if ($paletteset == set3) {
+      @return #8D8D8D;
+    }
+  }
+  
+  @function getDividerColor($paletteset){
+    @if ($paletteset == set1) {
+      @return var(--color-mh-divider);
+      } @else if ($paletteset == set2) {
+      @return var(--color-bd-divider);
+    } @else if ($paletteset == set3) {
+      @return #0000001f;
+    }
+  }
+  
+  @function getHyperlinkColor() {
+    @return var(--hyperlink-color);
+  }
+  
+  $warningColor: rgb(255,69,0);
+  $successColor: rgb(0,255,0);

@@ -1,0 +1,168 @@
+@import "../base/colors";
+@import "./functions";
+
+/**
+* No other color should be declared anywhere in the application.
+*/
+$im-colors-mastHead: (                     /* map to hold base colors for nameplate zone.*/
+"primary"     : getPrimaryColor(set1),
+"accent"      : getAccentColor(set1),
+"secondary"   : getSecondaryColor(set1),
+"foreground"  : getForegroundColor(set1),
+"background"  : getBackgroundColor(set1),
+"background-dark" : getBackgroundColor_dark(set1),
+"hover"       : getHoverColor(set1), 
+"warning"     : $warningColor,
+"success"     : $successColor,
+"divider"     : getDividerColor(set1)
+);
+
+$im-colors-column: (                        /* map to hold base colors for contacts zone.*/
+"primary"     : getPrimaryColor(set1),
+"accent"      : getAccentColor(set1),
+"secondary"   : getSecondaryColor(set1),
+"foreground"  : getForegroundColor(set1),
+"background"  : getBackgroundColor(set1),
+"background-dark" : getBackgroundColor_dark(set1),
+"hover"       : getHoverColor(set1), 
+"warning"     : $warningColor,
+"success"     : $successColor,
+"divider"     : getDividerColor(set1)
+);
+
+$im-colors-body: (                         /* map to hold base colors for body zone.*/
+"primary"     : getPrimaryColor(set2),
+"accent"      : getAccentColor(set2),
+"secondary"   : getSecondaryColor(set2),
+"foreground"  : getForegroundColor(set2),
+"background"  : getBackgroundColor(set2),
+"background-dark" : getBackgroundColor_dark(set2),
+"hover"       : getHoverColor(set2), 
+"warning"     : $warningColor,
+"success"     : $successColor,
+"divider"     : getDividerColor(set2)
+);
+
+$im-colors-context: (                        /* map to hold base colors for contacts zone.*/
+"primary"     : getPrimaryColor(set1),
+"accent"      : getAccentColor(set1),
+"secondary"   : getSecondaryColor(set1),
+"foreground"  : getForegroundColor(set1),
+"background"  : getBackgroundColor(set1),
+"background-dark" : getBackgroundColor_dark(set1),
+"hover"       : getHoverColor(set1), 
+"warning"     : $warningColor,
+"success"     : $successColor,
+"divider"     : getDividerColor(set1)
+);
+
+$im-colors-itembody: (
+  "primary"     : getPrimaryColor(set3),
+  "accent"      : getAccentColor(set3),
+  "secondary"   : getSecondaryColor(set3),
+  "foreground"  : getForegroundColor(set3),
+  "background"  : getBackgroundColor(set3),
+  "background-dark" : getBackgroundColor_dark(set3),
+  "hover"       : getHoverColor(set3), 
+  "warning"     : $warningColor,
+  "success"     : $successColor,
+  "divider"     : getDividerColor(set3)
+);
+
+$im-colors-dialog:(
+  "primary"     : getPrimaryColor(set3),
+  "accent"      : getAccentColor(set3),
+  "secondary"   : getSecondaryColor(set3),
+  "foreground"  : getForegroundColor(set3),
+  "background"  : getBackgroundColor(set3),
+  "background-dark" : getBackgroundColor_dark(set3),
+  "hover"       : getHoverColor(set3), 
+  "warning"     : $warningColor,
+  "success"     : $successColor,
+  "divider"     : getDividerColor(set3)
+);
+
+$im-colors-external:(
+  "primary"     : getPrimaryColor(set3),
+  "accent"      : #4C297B,                    // Different
+  "secondary"   : getSecondaryColor(set3),
+  "foreground"  : #666666,                    // Different
+  "background"  : getBackgroundColor(set3),
+  "background-dark" : gainsboro,              // Different
+  "hover"       : getHoverColor(set3), 
+  "warning"     : #ff0000,                    // Different
+  "success"     : #05a750,                    // Different
+  "divider"     : getDividerColor(set3)
+);
+
+
+$im-colors-calendar:(
+  "primary"     : getPrimaryColor(set2),
+  "accent"      : getAccentColor(set2),
+  "secondary"   : getSecondaryColor(set2),
+  "foreground"  : getForegroundColor(set2),
+  "background"  : getBackgroundColor(set2),
+  "background-dark" : getBackgroundColor_dark(set2),
+  "hover"       : getHoverColor(set2),
+  "warning"     : $warningColor,
+  "success"     : $successColor,
+  "divider"     : getDividerColor(set2)
+);
+
+$im-colors-search:(
+  "primary"     : getPrimaryColor(set2),
+  "accent"      : getAccentColor(set2),
+  "secondary"   : getSecondaryColor(set2),
+  "foreground"  : getForegroundColor(set2),
+  "background"  : getBackgroundColor(set2),
+  "background-dark" : getBackgroundColor_dark(set2),
+  "hover"       : getHoverColor(set2),
+  "warning"     : $warningColor,
+  "success"     : $successColor,
+  "divider"     : getDividerColor(set2)
+);
+
+
+$im-colors-userStatus: (
+  "online"      : rgb(0,255,0),
+  "offline"     : rgb(255,69,0),
+  "away"        : rgb(254,152,0)
+);
+
+
+$im-colors-chatCards: (
+  "color1"     : rgb(65,201,243),
+  "color2"     : rgb(254,198,79),
+  "color3"     : rgb(108,159,64),
+  "color4"     : rgb(246,104,32),
+  "color5"     : rgb(100,176,253),
+  "color6"     : rgb(243,149,36),
+  "color7"     : rgb(218,90,255),
+  "color8"     : rgb(238,63,63),
+  "color9"     : rgb(44,70,80),
+  "color0"     : rgb(63,74,67),
+);
+
+$im-font-map: (
+    "detail": setFontFamily(roboto),
+    "contacts": setFontFamily(roboto),
+    "nameplate": setFontFamily(raleway),
+    "calendar": setFontFamily(roboto),
+    "external": setFontFamily(raleway),
+    "itembody": setFontFamily(roboto),
+    "context": setFontFamily(roboto)
+);
+
+$im-zone-map: (
+    /* map to hold zones */ 
+    "nameplate": $im-colors-mastHead,
+	"contacts": $im-colors-column,
+	"details": $im-colors-body,
+	"itembody": $im-colors-itembody,
+	"external": $im-colors-external,
+	"calendar": $im-colors-calendar,
+	"search": $im-colors-search,
+	"dialog": $im-colors-dialog,
+	"context": $im-colors-context
+);
+

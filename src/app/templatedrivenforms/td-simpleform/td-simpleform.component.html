@@ -1,0 +1,27 @@
+<form #userForm="ngForm" autocomplete="off" (ngSubmit)="submit(userForm)">
+    <div>
+        <label>
+            username
+        </label>
+        <input [(ngModel)]="userModel.username" name="username" 
+        autocomplete="off" required minlength="6" #userNameCtr="ngModel">
+    </div>
+    <div *ngIf="userNameCtr.dirty && userNameCtr.hasError('required')">
+        Username is required
+    </div>
+    <div *ngIf="userNameCtr.dirty && userNameCtr.hasError('minlength')">
+        Username length should be minimum 3 charachters
+    </div>
+    <small>{{ userModel.username }} is an awesome username!</small>
+    <div>
+        <label>
+            password
+        </label>
+        <input [(ngModel)]="userModel.password" type="password" name="password" autocomplete="off" required  #passWordCtrl="ngModel">
+        <div *ngIf="passWordCtrl.dirty && passWordCtrl.hasError('required')">
+            Password is required
+        </div>
+    </div>
+    <button type="submit" [disabled]="userForm.invalid">Register</button>
+    <p>{{userForm.value | json}}</p>
+</form>

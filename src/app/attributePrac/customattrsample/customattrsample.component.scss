@@ -1,0 +1,5 @@
+.parent{
+    &::after{
+        content: attr(test);
+    }
+}
