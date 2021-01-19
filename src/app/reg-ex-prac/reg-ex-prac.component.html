@@ -1,0 +1,7 @@
+<input  placeholder="enter text to express regex" [formControl]="inputBox" >
+<div *ngIf="inputBox.errors?.pattern">
+    User name not valid.
+</div> 
+<div  *ngIf="inputBox?.value?.trim().length > 0">{{inputBox.value}}</div>
+<!-- <input place = 'enter reg expression' [formControl]="regex">
+<input place = 'enter reg expression' [formControl]="result"> --> 
