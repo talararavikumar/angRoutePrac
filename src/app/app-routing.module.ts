@@ -29,7 +29,8 @@ const routes: Routes = [{ path: 'contacts', component: ContactListComponent },
 },
 { path: 'lazyLoadPrac', loadChildren: () => import('./lazyload-prac/lazyload-prac.module').then(m => m.LazyloadPracModule) },
 { path: 'RegExPrac', loadChildren: () => import('./reg-ex-prac/reg-ex-prac.module').then(m => m.RegExPracModule) },
-{ path: 'attrPrac', loadChildren: () => import('./attr-prac/attr-prac.module').then(m => m.AttrPracModule) }];
+{ path: 'attrPrac', loadChildren: () => import('./attr-prac/attr-prac.module').then(m => m.AttrPracModule) },
+{ path: 'HooksPrac', loadChildren: () => import('./life-cycle-hooks-prac/life-cycle-hooks-prac.module').then(m => m.LifeCycleHooksPracModule) }];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

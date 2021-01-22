@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AttrPracComponent implements OnInit {
 
-  bTest = true;
+  bTest = false;
   constructor() { }
 
   ngOnInit() {
